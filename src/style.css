@@ -1,3 +1,4 @@
 .hello {
   color: green;
+  background: url("./icon.svg");
 }
