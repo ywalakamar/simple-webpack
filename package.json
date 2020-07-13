@@ -22,9 +22,11 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "style-loader": "^1.2.1",
+    "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.11.0"
   },
   "browserslist": [
@@ -36,6 +38,7 @@
     "lint": "eslint ./",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "serve": "node --require @babel/register server.js"
   }
 }
