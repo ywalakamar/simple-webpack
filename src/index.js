@@ -1,18 +1,15 @@
-import _ from 'lodash';
-import './style.css';
-import Icon from './icon.svg';
-import data from './data.json'
+import _ from "lodash";
+import printMe from "./print";
 
 const component = () => {
-  const element = document.createElement('div');
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+  const element = document.createElement("div");
+  const btn = document.createElement("button");
+  element.innerHTML = _.join(["Hello", "webpack"], " ");
 
-  // Add image to existing div
-  const icon = new Image();
-  icon.src = Icon;
-  element.appendChild(icon);
-  console.log(data)
+  btn.innerHTML = "Click Me and check the console!";
+  btn.onclick = printMe;
+  element.appendChild(btn);
+
   return element;
 };
 
