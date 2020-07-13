@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.svg';
+import data from './data.json'
 
 const component = () => {
   const element = document.createElement('div');
@@ -11,6 +12,7 @@ const component = () => {
   const icon = new Image();
   icon.src = Icon;
   element.appendChild(icon);
+  console.log(data)
   return element;
 };
 
