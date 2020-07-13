@@ -1,4 +1,21 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: larger;
+  src: url("./roboto-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("./roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("./roboto-v20-latin-regular.woff2") format("woff2"),
+    url("./roboto-v20-latin-regular.woff") format("woff"),
+    url("./roboto-v20-latin-regular.ttf"),
+    url("./roboto-v20-latin-regular.svg#Roboto") format("svg");
+}
 .hello {
   color: green;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 1.5rem;
   background: url("./icon.svg");
 }
