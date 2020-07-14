@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     app: "./src/index.js",
     print: "./src/print.js",
+    another: "./src/another-module.js",
   },
   devtool: "inline-source-map",
   devServer: { contentBase: "./dist" },
@@ -20,5 +21,10 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
 };
